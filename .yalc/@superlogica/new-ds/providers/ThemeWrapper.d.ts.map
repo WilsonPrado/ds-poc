@@ -1,0 +1,1 @@
+{"version":3,"file":"ThemeWrapper.d.ts","sourceRoot":"","sources":["../../lib/providers/ThemeWrapper.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,OAAO,CAAA;AACjC,OAAO,EAA8B,KAAK,EAAE,MAAM,eAAe,CAAA;AAEjE,KAAK,KAAK,GAAG;IACX,KAAK,EAAE,KAAK,CAAA;IACZ,QAAQ,EAAE,SAAS,CAAA;CACpB,CAAA;AAED,eAAO,MAAM,YAAY,GAAI,qBAAqB,KAAK,4CAKtD,CAAA"}

@@ -1,0 +1,95 @@
+{
+  "name": "@superlogica/new-ds",
+  "version": "1.0.0",
+  "description": "Design System corporativo com MUI Pro e suporte a temas.",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./input": {
+      "import": "./components/Input/index.js",
+      "types": "./components/Input/index.d.ts"
+    },
+    "./search-autocomplete": {
+      "import": "./components/SearchAutocomplete/index.js",
+      "types": "./components/SearchAutocomplete/index.d.ts"
+    },
+    "./button": {
+      "import": "./components/Button/index.js",
+      "types": "./components/Button/index.d.ts"
+    },
+    "./card": {
+      "import": "./components/Card/index.js",
+      "types": "./components/Card/index.d.ts"
+    },
+    "./tabs": {
+      "import": "./components/Tabs/index.js",
+      "types": "./components/Tabs/index.d.ts"
+    },
+    "./table": {
+      "import": "./components/Table/index.js",
+      "types": "./components/Table/index.d.ts"
+    },
+    "./select": {
+      "import": "./components/Select/index.js",
+      "types": "./components/Select/index.d.ts"
+    },
+    "./fab": {
+      "import": "./components/Fab/index.js",
+      "types": "./components/Fab/index.d.ts"
+    },
+    "./icon-button": {
+      "import": "./components/IconButton/index.js",
+      "types": "./components/IconButton/index.d.ts"
+    },
+    "./typography": {
+      "import": "./components/Typography/index.js",
+      "types": "./components/Typography/index.d.ts"
+    },
+    "./drawer": {
+      "import": "./components/Drawer/index.js",
+      "types": "./components/Drawer/index.d.ts"
+    },
+    "./dialog": {
+      "import": "./components/Dialog/index.js",
+      "types": "./components/Dialog/index.d.ts"
+    },
+    "./list": {
+      "import": "./components/List/index.js",
+      "types": "./components/List/index.d.ts"
+    },
+    "./themes": {
+      "import": "./themes/index.js",
+      "types": "./themes/index.d.ts"
+    },
+    "./providers": {
+      "import": "./providers/index.js",
+      "types": "./providers/index.d.ts"
+    },
+    "./license": {
+      "import": "./license/initMuiProLicense.js",
+      "types": "./license/initMuiProLicense.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "**/*"
+  ],
+  "peerDependencies": {
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@mui/icons-material": "^5.0.0",
+    "@mui/material": "^5.0.0",
+    "@mui/x-data-grid-pro": "^6.0.0",
+    "@mui/x-date-pickers-pro": "^6.0.0",
+    "@mui/x-license-pro": "^6.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "license": "MIT",
+  "private": false
+}

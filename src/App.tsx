@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useMemo, useEffect } from 'react'
+import { ThemeProvider, CssBaseline, Box } from '@mui/material'
+import { payboxDarkTheme, payboxLightTheme } from '../lib'
+import { ThemeToggle } from './components/ThemeToggle'
+import { useRoutes, BrowserRouter } from 'react-router-dom'
+import { routes } from './routes'
+import { DSLayout } from './components/DSLayout'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+// Rotas encapsuladas no layout
+function AppRoutes() {
+  const content = useRoutes(routes)
+  return <DSLayout>{content}</DSLayout>
 }
 
-export default App
+export default function App() {
+  const [isDark, setIsDark] = useState(() => {
+    return localStorage.getItem('ds_theme') === 'dark'
+  })
+
+  useEffect(() => {
+    localStorage.setItem('ds_theme', isDark ? 'dark' : 'light')
+  }, [isDark])
+
+  const theme = useMemo(() => (isDark ? payboxDarkTheme : payboxLightTheme), [isDark])
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <Box
+          sx={{
+            position: 'fixed',
+            top: 16,
+            right: 16,
+            zIndex: (theme) => theme.zIndex.drawer + 1 // acima do Drawer
+          }}
+        >
+          <ThemeToggle checked={isDark} onChange={setIsDark} />
+        </Box>
+        <AppRoutes />
+      </BrowserRouter>
+    </ThemeProvider>
+  )
+}
