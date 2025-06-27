@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "@superlogica/new-ds": {
-      "signature": "a1243c1d841a99c61f6f185ca02d3775",
-      "file": true
-    }
-  }
-}
