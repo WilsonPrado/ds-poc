@@ -1,4 +1,4 @@
-import { Input } from '../../lib/components/Input'
+import { Input } from '@superlogica/new-ds'
 
 export default function InputDemo() {
   return (

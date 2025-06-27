@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react'
 import { ThemeProvider, CssBaseline, Box } from '@mui/material'
-import { payboxDarkTheme, payboxLightTheme } from '../lib'
+import { payboxDarkTheme, payboxLightTheme } from '@superlogica/new-ds'
 import { ThemeToggle } from './components/ThemeToggle'
 import { useRoutes, BrowserRouter } from 'react-router-dom'
 import { routes } from './routes'

@@ -1,4 +1,4 @@
-import { Button } from '../../lib'
+import { Button } from '@superlogica/new-ds'
 
 export default function ButtonDemo() {
   return (

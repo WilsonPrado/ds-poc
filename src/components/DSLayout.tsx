@@ -1,4 +1,4 @@
-import { Typography, Drawer } from '../../lib'
+import { Typography, Drawer } from '@superlogica/new-ds'
 import { Link, useLocation } from 'react-router-dom'
 import { Box } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
@@ -16,7 +16,6 @@ const menuItems = [
   { label: 'Typography', path: '/typography' },
   { label: 'List', path: '/list' },
   { label: 'Tabs', path: '/tabs' },
-  { label: 'DataGrid', path: '/datagrid' },
   { label: 'Table', path: '/table' }
 ]
 const drawerWidth = 240
@@ -28,7 +27,11 @@ export const DSLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
-      <Drawer variant="permanent" open PaperProps={{ sx: { width: drawerWidth } }}>
+      <Drawer
+        variant="permanent" // 👈 torna o drawer fixo
+        open
+        PaperProps={{ sx: { width: drawerWidth } }}
+      >
         <Box p={2}>
           <Typography variant="h6" gutterBottom>
             Componentes

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Dialog, Typography } from '../../lib'
+import { Button, Dialog, Typography } from '@superlogica/new-ds'
 
 export default function DialogDemo() {
   const [open, setOpen] = useState(false)

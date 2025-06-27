@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Drawer } from '../../lib'
-import { Button } from '../../lib'
-import { Typography } from '../../lib'
+import { Drawer } from '@superlogica/new-ds'
+import { Button } from '@superlogica/new-ds'
+import { Typography } from '@superlogica/new-ds'
 import { Box } from '@mui/material'
 
 export default function DrawerDemo() {

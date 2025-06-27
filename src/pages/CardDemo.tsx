@@ -1,4 +1,4 @@
-import { Card, Button } from '../../lib'
+import { Card, Button } from '@superlogica/new-ds'
 
 export default function CardDemo() {
   return (

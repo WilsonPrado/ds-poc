@@ -1,6 +1,6 @@
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '../../lib'
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@superlogica/new-ds'
 
-// import InboxIcon from '@mui/icons-material/Inbox'
+import InboxIcon from '@mui/icons-material/Inbox'
 
 export default function ListDemo() {
   return (
@@ -8,10 +8,9 @@ export default function ListDemo() {
       <ListItem disablePadding>
         <ListItemButton selected>
           <ListItemIcon>
-            {/* <InboxIcon /> */}
+            <InboxIcon />
             <ListItemText primary="Inbox" />
           </ListItemIcon>
-          <ListItemText primary="Inbox" />
         </ListItemButton>
       </ListItem>
     </List>

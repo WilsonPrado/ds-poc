@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import { Typography, SearchAutocomplete } from '../../lib'
+import { Typography, SearchAutocomplete } from '@superlogica/new-ds'
 import { Search, TuneOutlined } from '@mui/icons-material'
 
 const USERS = [

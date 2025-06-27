@@ -1,4 +1,4 @@
-import { Tabs, Tab, TabPanel } from '../../lib'
+import { Tabs, Tab, TabPanel } from '@superlogica/new-ds'
 import { useState } from 'react'
 
 export default function TabsDemo() {
